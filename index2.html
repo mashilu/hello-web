@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            div#test {
-                background: #000;
-                color: #fff;
-            }
-            body {
-                margin: 0;
-            }
-            /*a:link {
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div#test {
+            background: #000;
+            color: #fff;
+        }
+        
+        body {
+            margin: 0;
+        }
+        /*a:link {
                 color:red;
             }*/
-            a:hover {
-                color:aquamarine;
-                font-size: 100px;
-            }
-            a:visited {
-                color: black;
-            }
-            abbr[title] {
-                border-bottom: 1px dotted #999;
-            }
-            abbr[title]:hover {
-                cursor: help;
-            }
-        </style>    
-    </head>
-    <body>
-        <div id="test">
-            asdfasasdfasdfasdfassdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-        </div>
-        <div>
-            <a href="http://www.163.com">网易</a>
-        </div>
-        <abbr title="Cascading Style Sheets">CSS</abbr>
-    </body>
+        
+        a:hover {
+            color: aquamarine;
+            font-size: 100px;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        abbr[title] {
+            border-bottom: 1px dotted #999;
+        }
+        
+        abbr[title]:hover {
+            cursor: help;
+        }
+        
+        .outer {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            border: solid 1px red;
+        }
+        
+        .inner {
+            width: 100px;
+            height: 50px;
+            background: blue;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        asdfasasdfasdfasdfassdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    </div>
+    <div>
+        <a href="http://www.163.com">网易</a>
+    </div>
+    <abbr title="Cascading Style Sheets">CSS</abbr>
+    <div class="outer">
+        <div class="inner">test</div>
+    </div>
+</body>
+
 </html>
